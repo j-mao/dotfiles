@@ -1,0 +1,12 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ['~']
+
+- link:
+    ~/.gitconfig: files/gitconfig
+    ~/.gitignore_global: files/gitignore_global
+    ~/.tmux.conf: files/tmux.conf
+    ~/.vimrc: files/vimrc
+    ~/.zshrc: files/zshrc
