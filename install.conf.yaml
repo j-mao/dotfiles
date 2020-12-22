@@ -4,9 +4,15 @@
 
 - clean: ['~']
 
+- shell:
+  - chmod 400 files/ssh/config
+
 - link:
     ~/.gitconfig: files/gitconfig
     ~/.gitignore_global: files/gitignore_global
+    ~/.ssh/config:
+      create: true
+      path: files/ssh/config
     ~/.tmux.conf: files/tmux.conf
     ~/.vimrc: files/vimrc
     ~/.zshrc: files/zshrc

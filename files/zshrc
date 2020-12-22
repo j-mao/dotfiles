@@ -1,18 +1,8 @@
 # Setup ohmyzsh
 export ZSH=$HOME/.dotfiles/ohmyzsh
 ZSH_THEME="robbyrussell"
+plugins=(vi-mode)
 source $ZSH/oh-my-zsh.sh
-
-# Autocomplete
-autoload -Uz compinit && compinit
-
-# SSH without known hosts
-alias goto="ssh 2> >( egrep >&2 -v '^Warning: Permanently added') -o 'UserKnownHostsFile /dev/null' -o 'StrictHostKeyChecking=no'"
-alias goscp="scp 2> >( egrep >&2 -v '^Warning: Permanently added') -o 'UserKnownHostsFile /dev/null' -o 'StrictHostKeyChecking=no'"
-
-# Vi-style key bindings
-set -o vi
-bindkey "^R" history-incremental-search-backward
 
 # Software versioning
 export JAVA_HOME="$('/usr/libexec/java_home' '-v' '15.0.1.jdk' 2> /dev/null)"

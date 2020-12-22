@@ -1,0 +1,5 @@
+Host athena.dialup.mit.edu github.com github.mit.edu git.spell.ml
+  CheckHostIP no
+
+Host *.amazonaws.com
+  UserKnownHostsFile ~/.ssh/aws_known_hosts
