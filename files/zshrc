@@ -4,6 +4,9 @@ ZSH_THEME="robbyrussell"
 plugins=(vi-mode)
 source $ZSH/oh-my-zsh.sh
 
+# Turn off history sharing
+unsetopt share_history
+
 # Software versioning
 export JAVA_HOME="$('/usr/libexec/java_home' '-v' '15.0.1.jdk' 2> /dev/null)"
 
