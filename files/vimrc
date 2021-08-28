@@ -16,10 +16,12 @@ set ttymouse=sgr
 set tabstop=2
 set softtabstop=2
 set shiftwidth=2
-autocmd Filetype python setlocal tabstop=4 softtabstop=4 shiftwidth=4
 set smartindent
 set expandtab
 set cino=N-s
+
+autocmd Filetype go,python setlocal tabstop=4 softtabstop=4 shiftwidth=4
+autocmd Filetype go setlocal noexpandtab
 
 set hlsearch
 set incsearch
