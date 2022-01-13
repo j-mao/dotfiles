@@ -8,7 +8,10 @@ source $ZSH/oh-my-zsh.sh
 unsetopt share_history
 
 # Software versioning
-export JAVA_HOME="$('/usr/libexec/java_home' '-v' '15.0.1.jdk' 2> /dev/null)"
+export JAVA_HOME="$('/usr/libexec/java_home' '-v' '17.0.1.jdk' 2> /dev/null)"
+
+# Postgres via libpq from brew
+export PATH="/usr/local/opt/libpq/bin:$PATH"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
